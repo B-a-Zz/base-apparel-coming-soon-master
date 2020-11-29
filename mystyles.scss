@@ -162,7 +162,13 @@
                 background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
                 border: none;
                 box-shadow: 0 4px 6px $DesaturatedRed;
-                &:hover {}
+                transition: all 250ms ease-in-out;
+                &:hover {
+                    background: linear-gradient(135deg, hsl(0, 82%, 89%), hsl(0, 84%, 82%));
+                    border: none;
+                    box-shadow: 0 8px 6px $DesaturatedRed;
+                    transform: translateX(20%);
+                }
             }
             .img {
                 width: 100%;

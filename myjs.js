@@ -28,12 +28,15 @@ button.addEventListener('click', () => {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (re.test(email)) {
             console.log("email matches")
-            error.style.opacity = "0%";
+            error.style.opacity = "100%";
+            error.style.color = "#E1EFD2";
+            error.innerHTML = "Valid Email Address";
             errorIcon.style.opacity = "0%";
             domSelector('input').value = "";
         } else {
             error.style.opacity = "100%";
             errorIcon.style.opacity = "100%";
+            error.innerHTML = "Invalid Email Address";
             return console.log('invalid Email')
         }
     }

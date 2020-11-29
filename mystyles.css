@@ -201,6 +201,17 @@ main .serch-controls button {
   border: none;
   -webkit-box-shadow: 0 4px 6px #ce9797;
           box-shadow: 0 4px 6px #ce9797;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+main .serch-controls button:hover {
+  background: linear-gradient(135deg, #facccc, #f8abab);
+  border: none;
+  -webkit-box-shadow: 0 8px 6px #ce9797;
+          box-shadow: 0 8px 6px #ce9797;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 main .serch-controls .img {
