@@ -28,7 +28,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: .5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 main nav {
