@@ -40,7 +40,7 @@
     body {
         background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
     
     main {
@@ -71,7 +71,8 @@
             img {
                 width: 100%;
                 min-height: 33vh;
-                object-fit: contain;
+                object-fit: cover;
+                max-height: 100vh;
             }
         }
         .cta {
@@ -146,10 +147,12 @@
                 color: rgb(255, 102, 102);
                 font-family: 'Josefin Sans', sans-serif;
                 font-size: .6rem;
+                opacity: 0%;
             }
             .error-icon {
                 position: absolute;
                 right: 15%;
+                opacity: 0%;
             }
             button {
                 position: relative;
@@ -176,7 +179,7 @@
         margin-top: 2rem;
     }
     
-    @media screen and (min-width:600px) {
+    @media screen and (min-width:700px) {
         main {
             grid-template-columns: 1fr 1fr;
             nav {
@@ -202,7 +205,7 @@
                 img {
                     width: 100%;
                     max-width: 100%;
-                    height: 100%;
+                    min-height: 100vh;
                     object-fit: cover;
                 }
             }
@@ -220,7 +223,7 @@
         }
     }
     
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1500px) {
         .ctaMessage {
             h1 {
                 font-size: 5rem;
