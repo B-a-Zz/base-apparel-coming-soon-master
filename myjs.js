@@ -31,7 +31,7 @@ button.addEventListener('click', () => {
         if (re.test(email)) {
             console.log("email matches")
             error.style.opacity = "100%";
-            error.style.color = "#E1EFA2";
+            error.style.color = "green";
             error.innerHTML = "Valid Email Address";
             errorIcon.style.opacity = "0%";
             domSelector('input').value = "";
