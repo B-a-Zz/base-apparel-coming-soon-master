@@ -19,6 +19,8 @@ button.addEventListener('click', () => {
     let classChanger = () => {
         error.style.opacity = "100%";
         errorIcon.style.opacity = "100%";
+        error.style.color = " rgb(255, 102, 102)";
+        error.innerHTML = "Please provide an email";
         console.log('Erro');
         console.log('No Email');
     }
@@ -29,7 +31,7 @@ button.addEventListener('click', () => {
         if (re.test(email)) {
             console.log("email matches")
             error.style.opacity = "100%";
-            error.style.color = "#E1EFD2";
+            error.style.color = "#E1EFA2";
             error.innerHTML = "Valid Email Address";
             errorIcon.style.opacity = "0%";
             domSelector('input').value = "";
